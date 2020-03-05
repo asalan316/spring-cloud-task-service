@@ -1,0 +1,9 @@
+---
+applications:
+- name: task-service
+  instances: 1
+  memory: 1024M
+  path: target/task-service-0.0.1-SNAPSHOT.jar
+  no-routes: true
+  his is the cf CLI command with the parameters you have set
+  cf run-task form-data ".java-buildpack/open_jdk_jre/bin/java org.springframework.boot.loader.JarLauncher" --name "form-data-task"
